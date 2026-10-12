@@ -1,0 +1,18 @@
+# 复制为 application-dev.yml 并填写本机配置。该本机文件不会进入版本控制或源码导出包。
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: mealgo
+    username: root
+    password: replace-with-your-local-password
+  redis:
+    host: localhost
+    port: 6379
+    database: 10
+spring:
+  redis:
+    password: ""
+# 演示管理端无需OSS或微信账号；使用图片上传/微信登录/支付时再填写。
+# 环境变量清单见 .env.example。

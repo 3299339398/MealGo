@@ -1,0 +1,58 @@
+server:
+  port: ${SERVER_PORT:8080}
+spring:
+  application:
+    name: mealgo
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      driver-class-name: ${sky.datasource.driver-class-name:com.mysql.cj.jdbc.Driver}
+      url: jdbc:mysql://${DB_HOST:${sky.datasource.host:localhost}}:${DB_PORT:${sky.datasource.port:3306}}/${DB_NAME:${sky.datasource.database:mealgo}}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${DB_USERNAME:${sky.datasource.username:root}}
+      password: ${DB_PASSWORD:${sky.datasource.password:}}
+  redis:
+    host: ${REDIS_HOST:${sky.redis.host:localhost}}
+    port: ${REDIS_PORT:${sky.redis.port:6379}}
+    password: ${REDIS_PASSWORD:}
+    database: ${REDIS_DATABASE:${sky.redis.database:10}}
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.sky.entity
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.sky.mapper: ${SQL_LOG_LEVEL:info}
+    com.sky.service: info
+    com.sky.controller: info
+mealgo:
+  order:
+    # 每单固定打包费，单位为元；由服务端核算。
+    packaging-fee: ${MEALGO_PACKAGING_FEE:2}
+sky:
+  jwt:
+    # 本地默认值仅供演示，部署时通过环境变量替换。
+    admin-secret-key: ${ADMIN_JWT_SECRET:mealgo-local-admin-change-before-deploy}
+    admin-ttl: 7200000
+    admin-token-name: token
+    user-secret-key: ${USER_JWT_SECRET:mealgo-local-user-change-before-deploy}
+    user-ttl: 7200000
+    user-token-name: authentication
+  alioss:
+    endpoint: ${OSS_ENDPOINT:oss-cn-beijing.aliyuncs.com}
+    access-key-id: ${OSS_ACCESS_KEY_ID:}
+    access-key-secret: ${OSS_ACCESS_KEY_SECRET:}
+    bucket-name: ${OSS_BUCKET_NAME:}
+  wechat:
+    appid: ${WECHAT_APP_ID:}
+    secret: ${WECHAT_APP_SECRET:}
+    mchid: ${WECHAT_MERCHANT_ID:}
+    mchSerialNo: ${WECHAT_MERCHANT_SERIAL:}
+    privateKeyFilePath: ${WECHAT_PRIVATE_KEY_PATH:}
+    apiV3Key: ${WECHAT_API_V3_KEY:}
+    weChatPayCertFilePath: ${WECHAT_CERTIFICATE_PATH:}
+    notifyUrl: ${WECHAT_PAY_NOTIFY_URL:}
+    refundNotifyUrl: ${WECHAT_REFUND_NOTIFY_URL:}

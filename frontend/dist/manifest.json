@@ -1,0 +1,15 @@
+{
+  "display": "standalone",
+  "start_url": "./index.html",
+  "short_name": "MealGo",
+  "background_color": "#eeeae2",
+  "theme_color": "#173b34",
+  "name": "食刻到家 · MealGo",
+  "icons": [
+    {
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "src": "./brand/mark.svg"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="236" height="60" viewBox="0 0 236 60" role="img" aria-label="食刻到家 MealGo">
+  <rect x="1" y="7" width="46" height="46" rx="15" fill="#173b34"/>
+  <path d="M12 29h24c-1 9-5 14-12 14S13 38 12 29Z" fill="#f4b86a"/>
+  <path d="M18 16c-5 6 4 6 0 11m8-11c-5 6 4 6 0 11m8-11c-5 6 4 6 0 11" fill="none" stroke="#f4b86a" stroke-width="2" stroke-linecap="round"/>
+  <text x="59" y="32" font-family="Microsoft YaHei,PingFang SC,sans-serif" font-weight="700" font-size="25" letter-spacing="1" fill="#173b34">食刻到家</text>
+  <text x="61" y="49" font-family="Arial,sans-serif" font-weight="700" font-size="12" letter-spacing="3.2" fill="#5d776b">MEALGO</text>
+</svg>

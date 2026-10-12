@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sky.mapper.DishFlavorMapper">
+
+    <insert id="insertBatch">
+        insert into dish_flavor(dish_id, name, value)
+        VALUES
+        <!-- 1. collection 改为参数名 flavors；2. item 可自定义（如 df），保持后续一致 -->
+        <foreach collection="flavors" item="df" separator=",">
+            <!-- 3. dish_id 改为实体类的驼峰属性名 dishId -->
+            (#{df.dishId}, #{df.name}, #{df.value})
+        </foreach>
+    </insert>
+    <delete id="deleteByDishIds">
+        delete from dish_flavor where dish_id in
+        <foreach collection="dishIds" open="(" close=")" separator="," item="dishId">
+            #{dishId}
+        </foreach>
+    </delete>
+
+</mapper>

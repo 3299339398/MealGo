@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="MealGo">
+  <rect width="64" height="64" rx="20" fill="#173b34"/>
+  <path d="M15 32h34c-1 13-7 20-17 20S16 45 15 32Z" fill="#f4b86a"/>
+  <path d="M23 13c-6 7 5 7 0 14m10-14c-6 7 5 7 0 14m10-14c-6 7 5 7 0 14" fill="none" stroke="#f4b86a" stroke-width="3" stroke-linecap="round"/>
+</svg>

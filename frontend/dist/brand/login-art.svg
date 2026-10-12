@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="560" viewBox="0 0 640 560">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#173b34"/><stop offset="1" stop-color="#294f43"/></linearGradient><radialGradient id="plate"><stop stop-color="#fff9ee"/><stop offset=".8" stop-color="#f4e6d1"/><stop offset="1" stop-color="#d9c5a8"/></radialGradient></defs>
+  <rect width="640" height="560" fill="url(#bg)"/>
+  <circle cx="570" cy="60" r="180" fill="#fff" opacity=".025"/><circle cx="60" cy="500" r="230" fill="#fff" opacity=".025"/>
+  <text x="54" y="63" font-family="Arial,sans-serif" font-size="13" letter-spacing="5" fill="#d5dfd3">MEALGO / MERCHANT CONSOLE</text>
+  <text x="54" y="125" font-family="Microsoft YaHei,PingFang SC,sans-serif" font-size="38" font-weight="700" fill="#fff8ed">每一餐，都值得用心。</text>
+  <text x="56" y="164" font-family="Microsoft YaHei,PingFang SC,sans-serif" font-size="15" fill="#b8cec1">从第一份订单，到每一天的好生意。</text>
+  <ellipse cx="350" cy="455" rx="160" ry="25" fill="#0b211b" opacity=".35"/>
+  <circle cx="350" cy="343" r="135" fill="url(#plate)"/>
+  <circle cx="350" cy="343" r="106" fill="none" stroke="#dbcbb4" stroke-width="2"/>
+  <path d="M293 329c-18-29 22-63 40-42 15-30 58-7 49 20 34-7 51 35 24 51 9 30-35 49-54 25-25 25-65 6-60-20-30-4-29-34 1-34Z" fill="#f1b55d"/>
+  <path d="M287 312c-15-18-35-13-36 7 16 5 28 1 36-7m103-40c2-24 25-27 32-10-8 14-18 17-32 10m9 110c20 1 30 16 15 29-17-4-23-13-15-29" fill="#709971"/>
+  <circle cx="328" cy="324" r="15" fill="#c95e3c"/><circle cx="376" cy="351" r="16" fill="#c95e3c"/><circle cx="328" cy="365" r="9" fill="#d88743"/>
+  <path d="m340 304 18 12m-15 23 13 10m-3 22 13 9" stroke="#fff4d7" stroke-width="5" stroke-linecap="round"/>
+  <path d="m157 255 24 183m-8-184 24 183" stroke="#cda575" stroke-width="7" stroke-linecap="round"/>
+  <rect x="55" y="478" width="175" height="32" rx="16" fill="#ffffff" fill-opacity=".08"/>
+  <circle cx="72" cy="494" r="4" fill="#a9cba1"/><text x="86" y="499" font-family="Microsoft YaHei,sans-serif" font-size="12" fill="#d9e5d9">让经营更从容</text>
+</svg>

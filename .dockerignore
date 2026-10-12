@@ -1,0 +1,14 @@
+**/target
+**/.git
+.git-empty-backup
+.idea
+.env
+**/application-dev.yml
+**/application-local.yml
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+artifacts
+.local
+**/logs
